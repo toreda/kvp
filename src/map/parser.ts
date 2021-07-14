@@ -40,6 +40,11 @@ export class StrongMapParser {
 			return false;
 		}
 
+		if (state.visited.has(map)) {
+			return false;
+		}
+
+		state.visited.add(map);
 		const keys: string[] = Object.keys(map);
 
 		for (const keyName of keys) {

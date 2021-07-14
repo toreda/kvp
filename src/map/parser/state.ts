@@ -1,7 +1,9 @@
 import {StrongMapParserOptions as Options} from './options';
 
 export class StrongMapParserState {
+	public visited: Set<unknown>;
+
 	constructor(_options?: Options) {
-		// empty constructor
+		this.visited = new Set();
 	}
 }

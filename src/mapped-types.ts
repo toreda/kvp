@@ -7,6 +7,8 @@ export type PrimitiveToStrong<Literal> = StrongType<LiteralToPrimitive<Literal>>
 type RecordToStrongRequired<Rec> = {
 	[Key in keyof Rec]: Rec[Key] extends Primitive
 		? PrimitiveToStrong<Rec[Key]>
+		: Rec[Key] extends Array<ANY>
+		? Rec[Key]
 		: Rec[Key] extends AnyObj<ANY>
 		? Expand<RecordToStrong<Rec[Key]>>
 		: Rec[Key];

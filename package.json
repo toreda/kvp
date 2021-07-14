@@ -1,6 +1,6 @@
 {
 	"name": "@toreda/strong-types",
-	"version": "0.11.1",
+	"version": "0.11.3",
 	"description": "Native TypeScript containers for generic values. Reliably store and retrieve values without writing validation or type checking code. Use predefined types & validators, or make your own.",
 	"main": "./dist/index",
 	"typings": "./dist/index.d.ts",
@@ -39,9 +39,8 @@
 		"@microsoft/tsdoc": "^0.13.2",
 		"@microsoft/tsdoc-config": "^0.15.2",
 		"@toreda/build-tools": "^0.1.15",
-		"@toreda/eslint-config": "^2.1.0",
+		"@toreda/eslint-config": "^2.2.0",
 		"@toreda/prettier-config": "^1.0.1",
-		"@toreda/types": "^0.0.x",
 		"@types/jest": "^26.0.23",
 		"@types/node": "^15.0.3",
 		"@types/yargs-parser": "^15.0.0",
@@ -64,7 +63,9 @@
 		"yargs-parser": "^20.2.7"
 	},
 	"prettier": "@toreda/prettier-config",
-	"dependencies": {},
+	"dependencies": {
+		"@toreda/types": "^1.0.1"
+	},
 	"browser": {
 		"crypto": false,
 		"buffer": false,

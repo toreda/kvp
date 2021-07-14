@@ -22,16 +22,18 @@ export class StrongMapJsonifier {
 		for (const keyName of keys) {
 			const child = map[keyName];
 
-			if (child instanceof StrongMap) {
+			if (child == null) {
+				result[keyName] = this.jsonifyKey(child, state);
+			} else if (child instanceof StrongMap) {
 				result[keyName] = this.jsonifyMap(child, state);
-			} else if (child?.typeId === 'StrongType') {
+			} else if (child.typeId === 'StrongType') {
 				result[keyName] = this.jsonifyKey(child, state);
 			} else if (typeof child !== 'object') {
 				result[keyName] = this.jsonifyKey(child, state);
 			} else if (Array.isArray(child)) {
 				result[keyName] = this.jsonifyKey(child, state);
 			} else {
-				result[keyName] = this.jsonifyMap(child, state);
+				result[keyName] = this.jsonifyKey(child, state);
 			}
 		}
 

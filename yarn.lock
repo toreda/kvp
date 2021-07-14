@@ -617,7 +617,7 @@
     webpack "^5.34.0"
     yargs "^16.2.0"
 
-"@toreda/eslint-config@^2.1.0":
+"@toreda/eslint-config@^2.1.0", "@toreda/eslint-config@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@toreda/eslint-config/-/eslint-config-2.2.0.tgz#ee3e0bb8d2263461ea214e04c728f498f2b09278"
   integrity sha512-iNbXSRlR98tacWc8pt2nk2+skREoLhlz0FXbcqgHqiAL9xR7wWulrCGBxR+ItstHl8jxS/5DmLOnX5QELsJIhg==
@@ -632,14 +632,10 @@
   resolved "https://registry.yarnpkg.com/@toreda/strong-types/-/strong-types-0.9.0.tgz#19074d76569f7fa0da02d3fff56945172e575776"
   integrity sha512-kq239FFEFF5M64VI7nhDI3YXWYU/JsosDqTRJIdF5nG4rztAdX9R1Vw28bRfHbpw4rhVYiBTB459JG9oGbpEGQ==
 
-"@toreda/types@^0.0.x":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@toreda/types/-/types-0.0.2.tgz#d0e211864fa1f9a81e82a904e9ebf3959f7992b5"
-  integrity sha512-LGTKJ6y0U/VJ3zjqnS2ffLIhWvUNOg+3gOr7WApH8NtsBXO3EoRj0CZe7PVd7v+pMpqp2z+dJGn4Jm5vyz8jJw==
-  dependencies:
-    "@toreda/build-tools" "^0.1.15"
-    "@types/node" "^15.6.2"
-    gulp "^4.0.2"
+"@toreda/types@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@toreda/types/-/types-1.0.1.tgz#44f77f662c84e880cfc3e59fe6a089225a843d90"
+  integrity sha512-oWi73iOJyFkOjxv3IkT/Zgm30+f/iqRAnsICmINZBvWgLqhBUzxpPfSW43I1sR+NDHll20FB+S5WZyv+1tnUVw==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.14"
@@ -789,7 +785,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.4.tgz#f0ec25dbf2f0e4b18647313ac031134ca5b24b21"
   integrity sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==
 
-"@types/node@*", "@types/node@^15.0.3", "@types/node@^15.6.2":
+"@types/node@*", "@types/node@^15.0.3":
   version "15.12.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.1.tgz#9b60797dee1895383a725f828a869c86c6caa5c2"
   integrity sha512-zyxJM8I1c9q5sRMtVF+zdd13Jt6RU4r4qfhTd7lQubyThvLfx6yYekWSQjGCGV2Tkecgxnlpl/DNlb6Hg+dmEw==
